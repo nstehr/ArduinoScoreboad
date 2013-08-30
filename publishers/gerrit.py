@@ -36,7 +36,7 @@ def main():
             msgs.append(msg_for_commit)
             if 'comments' in review:
                 comments = review['comments']
-                msgs.append("Review(s):")
+                msgs.append("Comment(s):")
                 for comment in comments:
                     reviewer = comment['reviewer']['name']
                     message = comment['message'].replace('\n\n','. ')
